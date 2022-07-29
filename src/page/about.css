@@ -1,0 +1,102 @@
+
+.aboutHeading {
+	background: rgba(0, 0, 0, 0.7) url('/public/about.jpg');
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: darken;
+	text-align: center;
+	padding: 6rem 1rem;
+}
+
+.aboutHeading-text {
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 2rem;
+}
+
+.aboutHeading-text h1 {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	color: #fff;
+	font-size: 40px;
+}
+
+.aboutSection {
+    padding: 1rem 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.aboutSectionTextHeading {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+    color: #800000;
+    text-transform: capitalize;
+}
+
+/* .aboutSectionText {
+    
+} */
+
+.aboutSectionImage img {
+    border-radius: 10px;
+    /* width: 100%; */
+    height: 37rem;
+    margin-left: 10rem;
+    margin-top: 5rem;
+}
+
+.aboutSectionTextBody p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.7rem;
+}
+
+.aboutHilda {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding-left: 10rem;
+}
+
+.aboutHilda h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+    color: #002234;
+}
+
+.aboutHilda h3 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.2rem;
+    color: #002234;
+    margin-top: .5rem;
+}
+
+.appointmentHeading {
+	background: rgba(0, 0, 0, 0.7) url('/public/appoint.jpg');
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: darken;
+	text-align: center;
+	padding: 6rem 1rem;
+}
+
+.appointmentHeading-text {
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 2rem;
+}
+
+.appointmentHeading-text h1 {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 40px;
+    text-align: left;
+}

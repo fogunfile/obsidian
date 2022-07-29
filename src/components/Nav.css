@@ -1,0 +1,122 @@
+.nav {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #ffff;
+  box-shadow: 2px 2px 2px #e8e8e8;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 0 2rem;
+}
+
+.appointBtn {
+	background-color: #800000;
+	color: #fff;
+	text-decoration: none;
+}
+
+.nav__container {
+  width: 60%;
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 27px;
+  color: #002234;
+  list-style: none;
+  margin: 0;
+  padding: 0 3rem;
+}
+.nav__container li {
+  padding: 27px 0;
+}
+.nav__container a{
+  text-decoration: none;
+  color: #002234;
+  font-size: 18px;
+}
+.nav__container a.active{
+  color: #000;
+  font-weight: bolder;
+}
+.sub__menus {
+  position: absolute;
+  display: none; 
+  background: white;
+  border: 1px solid lavender;
+  width: 227px;
+  left: 0;
+  padding: 17px 17px 17px 17px;
+  z-index: 1000;
+  box-shadow: 0 10px 12px rgb(22 33 39 / 25%);
+  list-style: none;
+  margin-top: 2rem;
+}
+.nav__container .sub__menus li a.active {
+	color: #800000;
+}
+.sub__menus li {
+	padding: 10px 0;
+	text-align: left;
+}
+.sub__menus li a{
+	color: #000;
+}
+.sub__menus__arrows{
+  position: relative;
+}
+.sub__menus__arrows svg{
+  vertical-align: middle;
+}
+@media (min-width:992px) { 
+  .sub__menus__arrows:hover .sub__menus{
+    display: block;
+  }
+}
+@media(max-width:991px){
+	.nav__container {display: none}
+	.nav {
+		margin: 0;
+		padding: 0;
+	}
+	.menubar__button:hover {background-color: #FE0000;}
+	.menubar__button {
+		display: inline-block !important;
+		background-color: #FE0000;
+		color: #fff;
+		padding: 6px 7px;
+		border-radius: 5px;
+    	margin: 10px 2rem;
+		cursor: pointer;
+		position: relative;
+		z-index: 10037;
+	}
+	.nav__container li {padding: 0px 0;}
+	.menubar__button svg{font-size: 27px;}
+	.responsive__nav__show {
+		display: block!important;
+		position: absolute;
+		/* left: 0; */
+		z-index: 10007;
+		background-color: #fff;
+		border-bottom: 3px solid #800000;
+		/* right: 0; */
+		padding-bottom: 17px;
+		padding-top: 20rem;
+		width: 90%;
+		top: 100;
+		text-align: left;
+		padding-left: 1.5rem;
+		margin: 0 auto;
+	}
+	.nav__container a {
+		font-size: 22px;
+		display: flex;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		flex-direction: row;
+		margin-bottom: 17px;
+	}
+	.main-nav .sub__menus__arrows:hover .sub__menus {margin: 0 auto;left: 0;right: 0;}
+	.sub__menus__Active{display: block!important;margin: 0 auto;left: 0;right: 0;}
+}
